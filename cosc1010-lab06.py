@@ -1,12 +1,10 @@
-# Your Name Here
+# Colton Riley
 # UWYO COSC 1010
-# Submission Date
+# Submission Date 10/16/24
 # Lab 06
-# Lab Section: 
+# Lab Section: 15
 # Sources, people worked with, help given to: 
-# your
-# comments
-# here
+
 
 
 random_string = """
@@ -80,8 +78,17 @@ print(len(random_string)) # Print out the size for reference
     # Then increment its corresponding count 
 
 
+
 #Load all the elements into a dictionary
 #Will need to first declare a dictionary 
+
+characters_dict = {}
+for string in random_string:
+    if string == characters_dict.keys():
+        characters_dict[string] += 1
+    else:
+        characters_dict[string] = 1
+print(characters_dict)
 
 # Output: each letter and its corresponding occurrence in alphabetical order
 
