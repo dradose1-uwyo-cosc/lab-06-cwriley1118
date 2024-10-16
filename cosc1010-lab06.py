@@ -3,7 +3,7 @@
 # Submission Date 10/16/24
 # Lab 06
 # Lab Section: 15
-# Sources, people worked with, help given to: 
+# Sources, people worked with, help given to: Help from Colter
 
 
 
@@ -82,21 +82,27 @@ print(len(random_string)) # Print out the size for reference
 #Load all the elements into a dictionary
 #Will need to first declare a dictionary 
 
+# Output: each letter and its corresponding occurrence in alphabetical order
+
 characters_dict = {}
 for string in random_string:
-    if string == characters_dict.keys():
+    if string in characters_dict.keys():
         characters_dict[string] += 1
     else:
         characters_dict[string] = 1
-print(characters_dict)
+characters_sorted = dict(sorted(characters_dict.items()))
+print(characters_sorted)
 
-# Output: each letter and its corresponding occurrence in alphabetical order
+        
+
+    
+
 
 print("*"*75)
 # Output which letter occurred the most 
 
-most_occurred = ""
-least_occurred = ""
+most_occurred = max(characters_sorted, key=characters_sorted.get)
+least_occurred = min(characters_sorted, key=characters_sorted.get)
 
 print(f"The letter that occurred the most is {most_occurred}")
 print("*"*75)
@@ -105,3 +111,8 @@ print(f"The letter that occurred the most is {least_occurred}")
 print("*"*75)
 
 # Output what the percentage of the string each character is, again in alphabetical
+
+characters_percent = {}
+for key, value in characters_sorted.items():
+    characters_percent[key] = (value/2500)*100
+print(characters_percent)
