@@ -3,7 +3,7 @@
 # Submission Date 10/16/24
 # Lab 06
 # Lab Section: 15
-# Sources, people worked with, help given to: Help from Colter
+# Sources, people worked with, help given to: Help from Colter. Also Helped Jed with the git add/commit/push functions and downloading process.
 
 
 
